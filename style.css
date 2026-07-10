@@ -1,0 +1,26 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    gap: 60px;
+    
+}
+ul a{
+    text-decoration: none;
+    color: rgb(197, 180, 180);
+}
+button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: aquamarine; 
+}
