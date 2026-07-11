@@ -193,3 +193,195 @@ h2 {
 .pricing-card li{
     margin-bottom: 15px;
 }
+
+/* Venue section start css(write from ai) */
+
+.venue {
+    --board-bg: #0B1220;
+    --board-surface: #131B2E;
+    --board-line: #29344B;
+    --board-accent: #FFB100;
+    --board-text: #EAEDF5;
+    --board-muted: #7C89A6;
+
+    background: var(--board-bg);
+    color: var(--board-text);
+    padding: 6rem 1.5rem;
+}
+
+.venue-intro {
+    max-width: var(--container);
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    color: var(--board-accent);
+    margin-bottom: 1rem;
+}
+
+.venue h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-bottom: 0.5rem;
+}
+
+.venue-address {
+    color: var(--board-muted);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.venue-facts {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.fact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.fact-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--board-muted);
+    text-transform: uppercase;
+}
+
+.fact-value {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.board {
+    max-width: var(--container);
+    margin: 0 auto;
+    background: var(--board-surface);
+    border: 1px solid var(--board-line);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--board-line);
+}
+
+.board-title {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    color: var(--board-text);
+}
+
+.board-caption {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    color: var(--board-muted);
+    display: none;
+}
+
+.board-row {
+    display: grid;
+    grid-template-columns: 44px 1.4fr 1fr 0.7fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 1.5rem;
+    border-bottom: 1px solid var(--board-line);
+    animation: flap 0.5s ease both;
+}
+
+.board-row:last-child {
+    border-bottom: none;
+}
+
+.board-row:nth-child(2) { animation-delay: 0.05s; }
+.board-row:nth-child(3) { animation-delay: 0.15s; }
+.board-row:nth-child(4) { animation-delay: 0.25s; }
+.board-row:nth-child(5) { animation-delay: 0.35s; }
+
+.board-photo {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--board-line);
+}
+
+.board-cell {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+}
+
+.board-name {
+    font-weight: 600;
+    color: var(--board-text);
+}
+
+.board-track {
+    color: var(--board-muted);
+}
+
+.board-hall {
+    color: var(--board-accent);
+    font-weight: 600;
+}
+
+.board-time {
+    color: var(--board-text);
+    text-align: right;
+}
+
+@keyframes flap {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .board-row {
+        animation: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .board-row {
+        grid-template-columns: 36px 1fr 1fr;
+        row-gap: 0.25rem;
+    }
+
+    .board-hall,
+    .board-time {
+        text-align: left;
+    }
+}
+
+@media (max-width: 560px) {
+    .venue-facts {
+        flex-direction: column;
+        gap: 1.25rem;
+        align-items: center;
+    }
+}
+/* Venue section end css */
