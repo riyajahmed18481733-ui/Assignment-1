@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* nav bar start css */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -21,10 +21,10 @@
 
 ul a {
     text-decoration: none;
-    color: rgb(197, 180, 180);
+    color: rgb(131, 114, 114);
 }
 
-.common-btn {
+.common-btn{
     height: 40px;
     width: 150px;
     border: none;
@@ -32,6 +32,12 @@ ul a {
     cursor: pointer;
     background-color: aquamarine;
 }
+.common-btn:hover{
+    color: #7161ca;
+}
+/* nav bar end css*/
+
+/* hero section start css */
 
 .hero {
     background-image: url(./images/banner.jpg);
@@ -69,6 +75,9 @@ h2 {
     padding: 50px;
 }
 
+/* hero section end css */
+
+ /* Speakers section start css */
 .speakers {
     width: 100%;
     max-width: 1200px;
@@ -114,6 +123,9 @@ h2 {
     color: rgb(149, 150, 151);
 }
 
+/* Speakers section end css  */
+
+/* Secure Your Spot section start css */
 .pricing {
     width: 100%;
     max-width: 1200px;
@@ -177,22 +189,29 @@ h2 {
     margin-bottom: 15px;
     color: rgb(110, 110, 156);
 }
-.pricing-card hr{
+
+.pricing-card hr {
     margin: 20px 0;
 }
-.pricing-card button{
+
+.pricing-card button {
     width: 100%;
     height: 45px;
     border-radius: 8px;
     cursor: pointer;
 }
-.pricing-card ul{
+
+.pricing-card ul {
     padding-left: 20px;
     margin-bottom: 25px;
 }
-.pricing-card li{
+
+.pricing-card li {
     margin-bottom: 15px;
 }
+
+/* Secure Your Spot section end css */
+
 
 /* Venue section start css(write from ai) */
 
@@ -310,10 +329,21 @@ h2 {
     border-bottom: none;
 }
 
-.board-row:nth-child(2) { animation-delay: 0.05s; }
-.board-row:nth-child(3) { animation-delay: 0.15s; }
-.board-row:nth-child(4) { animation-delay: 0.25s; }
-.board-row:nth-child(5) { animation-delay: 0.35s; }
+.board-row:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.board-row:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.board-row:nth-child(4) {
+    animation-delay: 0.25s;
+}
+
+.board-row:nth-child(5) {
+    animation-delay: 0.35s;
+}
 
 .board-photo {
     width: 44px;
@@ -353,6 +383,7 @@ h2 {
         opacity: 0;
         transform: translateY(-6px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -384,4 +415,35 @@ h2 {
         align-items: center;
     }
 }
+
 /* Venue section end css */
+
+/*Footer section start css*/
+
+.footer{
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 30px 50px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+.footer hr{
+    margin: 30px -50px;
+    border: none;
+    border-top: 2px solid #ddd;
+}
+.copyright{
+    text-align: center;
+    color: #052d7d;
+    font-size: 20px;
+}
+
+/* Footer section end css*/
